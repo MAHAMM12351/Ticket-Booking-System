@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Booking</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, 60px);
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label {
+      width: 60px;
+      height: 60px;
+      background-color: lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="checkbox"]:checked + label {
+      background-color: green;
+      color: white;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Select Your Seats</h2>
+
+<div class="container">
+  <input type="checkbox" id="s1"><label for="s1">1</label>
+  <input type="checkbox" id="s2"><label for="s2">2</label>
+  <input type="checkbox" id="s3"><label for="s3">3</label>
+  <input type="checkbox" id="s4"><label for="s4">4</label>
+  <input type="checkbox" id="s5"><label for="s5">5</label>
+
+  <input type="checkbox" id="s6"><label for="s6">6</label>
+  <input type="checkbox" id="s7"><label for="s7">7</label>
+  <input type="checkbox" id="s8"><label for="s8">8</label>
+  <input type="checkbox" id="s9"><label for="s9">9</label>
+  <input type="checkbox" id="s10"><label for="s10">10</label>
+</div>
+
+<h3>Click seats to select (Green = Selected)</h3>
+
+</body>
+</html>
